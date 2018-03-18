@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rob Bertram: Front-End Web Developer</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Projects
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </header>
+        <div class="home">
+            <img class="main-img" src="assets/main.jpg" alt="main-image">
+        </div>
+        <div class="projects">
+            <h1>
+                Projects
+            </h1>
+            <div class="card-box">
+                <div v-for="card in cards" class="card">
+                    <img class="img-card" :src=card.image>
+                    <div class="info-card">
+                        <div class="title-card">
+                           {{ card.title }}
+                        </div>
+                        <div class="link-box">
+                            <a target="_blank" v-bind:href="card.view"><div class="link">
+                                View Project
+                            </div></a>
+                            <a target="_blank" v-bind:href="card.github"><div class="link">
+                                View Code on GitHub
+                            </div></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
