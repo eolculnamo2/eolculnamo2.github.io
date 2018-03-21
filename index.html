@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="style.css">
     <title>Rob Bertram: Front-End Web Developer</title>
@@ -52,7 +54,7 @@
                 Featured Projects
             </h1>
             <div class="card-box">
-                <div v-for="card in cards" class="card">
+                <div data-aos="fade-right" v-for="card in cards" class="card">
                     <img class="img-card" :src=card.image>
                     <div class="info-card">
                         <div class="title-card">
@@ -114,10 +116,22 @@
                 </div>
             </div>
         </div>
-        <div class="contact-modal">
-            
+        <div class="contact">
+            <div class="social">
+                  <ul>
+                      <li>GitHub</li>
+                      <li>Codepen</li>
+                      <li>Email</li>
+                  </ul>
+            </div>
         </div>
     </div>
+   
     <script src="script.js"></script>
+    <script>
+            AOS.init({
+      duration: 1200,
+    })
+          </script>
 </body>
 </html>

@@ -237,3 +237,27 @@ header li:hover {
     padding: 20px;
     align-self: center;
 }
+
+/* Contact */
+.contact{
+    background-color: #333;
+    color: #F4976C;
+    min-height: 20vh;
+}
+.social ul{
+    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 20vh;
+}
+.social li {
+    padding: 25px;
+    cursor: pointer;
+    align-self: center;
+}
+.social li:hover {
+    color: #FBE8A6;
+}
