@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="style.css">
     <title>Rob Bertram: Front-End Web Developer</title>
@@ -18,11 +19,11 @@
                 <li v-on:click="scroll('homeGo')">
                     Home
                 </li>
-                <li>
-                    About
-                </li>
                 <li v-on:click="scroll('projects')">
-                    Projects
+                        Projects
+                    </li>
+                <li v-on:click="scroll('about')">
+                    About
                 </li>
                 <li>
                     Contact
@@ -69,12 +70,53 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
-
+        <div id="about" class="buffer bg-color2"></div>
+        <div class="about">
+            <h1>
+                About
+            </h1>
+            <div class="about-content">
+                <div class="my-image">
+                    <img src="assets/me.jpeg" alt="me">
+                </div>
+                <div class="content-box">
+                    <h3>
+                        Web Developer
+                    </h3>
+                    <p>
+                        Currently working as a front-end web developer with aspirations of one day becoming a full stack JavaScript developer.
+                    </p>
+                    <p>
+                        I'm best at:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React.JS</li>
+                            <li>MongoDB/Mongoose</li>
+                            <li>Express.JS</li>
+                        </ul>
+                        <p>
+                            I'm currently learning and am familiar with:
+                        </p> 
+                        <ul>
+                            <li>
+                                Vue.JS
+                            </li>
+                            <li>
+                                DJango
+                            </li>
+                            <li>
+                                Node.JS (Outside of Express)
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </div>
-        <footer>
-
-        </footer>
+        <div class="contact-modal">
+            
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

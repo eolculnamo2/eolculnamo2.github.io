@@ -89,10 +89,13 @@ header li:hover {
 .buffer {
     margin: 0;
     padding: 0;
-    height: 9vh;
+    height: 8vh;
 }
 .bg-color1 {
     background-color: #FBE8A6;
+}
+.bg-color2 {
+    background-color: #B4DFE5;
 }
 @media screen and (max-width: 900px){
     .home .main-img {
@@ -116,7 +119,7 @@ header li:hover {
     color: #FBE8A6;
     margin: 0;
     padding: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 .card-box {
     display: flex;
@@ -173,11 +176,64 @@ header li:hover {
     cursor: pointer;
 }
 .link:hover {
-    color: black;
+    color: #F4976C;
 }
 .link-box {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* About */
+
+.about {
+    min-height: 90vh;
+    background-color: #F4976C;
+}
+.about h1 {
+    text-align: center;
+    background-color:#303C6C;
+    color: #F4976C;
+    margin: 0;
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.about img {
+    border-radius: 5px;
+}
+.about-content {
+    width: 100vw;
+    display: flex;
+    color: #303C6C;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media (min-width: 600px){
+    .about-content {
+        width: 70vw;
+        margin: auto;
+    }
+}
+.about-content h3 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+.about-content p,
+.about-content ul {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 1.25;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.content-box {
+    background-color: #FBE8A6;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.my-image{
+    padding: 20px;
+    align-self: center;
 }
