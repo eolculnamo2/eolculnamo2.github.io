@@ -39,9 +39,32 @@ new Vue ({
             }
         ]
     },
+    created: function(){ 
+        window.addEventListener("click",(e)=>{   
+            if(e.target.className != "mobile-menu"){        
+                menu.style.position="static"
+                menu.style.display="none"
+            }
+        })
+    },
     methods: {
         scroll: function(x){
             document.getElementById(x).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        },
+        showMenu: function(){
+           var menu = document.getElementById("menu");
+           menu.style.position = "absolute";
+           menu.style.display = "block";
+
+            menu.addEventListener("click",()=>{
+                menu.style.position="static"
+                menu.style.display="none"
+            })
+           window.addEventListener("scroll",()=>{
+                menu.style.position="static"
+                menu.style.display="none"
+            })
+            
         }        
     }
 })

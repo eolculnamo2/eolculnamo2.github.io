@@ -34,6 +34,13 @@ header li:hover {
 .mobile-menu{
     display: none;
 }
+#menu{
+    animation-name: slide;
+    animation-duration: .1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
 @media screen and (max-width: 650px){
     header ul{
         display: none;
@@ -269,9 +276,17 @@ header li:hover {
 .social li:hover {
     color: #FBE8A6;
 }
+.relativee {
+    position: relative;
+}
 @media screen and (max-width: 600px){
     .social ul {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+}
+
+@keyframes slide {
+    from {transform: translate(250px)}
+    to {transform: translate(0px)}
 }

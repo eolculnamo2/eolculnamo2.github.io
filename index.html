@@ -16,21 +16,23 @@
     <div id="app">
         <div id="homeGo"></div>
         <header>
-            <img class="mobile-menu" src="assets/menu.svg" alt="menu">
-            <ul>
-                <li v-on:click="scroll('homeGo')">
-                    Home
-                </li>
-                <li v-on:click="scroll('projects')">
-                        Projects
+            <div class="relative">
+                <img v-on:click="showMenu()" class="mobile-menu" src="assets/menu.svg" alt="menu">
+                <ul id="menu">
+                    <li v-on:click="scroll('homeGo')">
+                        Home
                     </li>
-                <li v-on:click="scroll('about')">
-                    About
-                </li>
-                <li v-on:click="scroll('contact')">
-                    Contact
-                </li>
-            </ul>
+                    <li v-on:click="scroll('projects')">
+                            Projects
+                        </li>
+                    <li v-on:click="scroll('about')">
+                        About
+                    </li>
+                    <li v-on:click="scroll('contact')">
+                        Contact
+                    </li>
+                </ul>
+            </div>
         </header>
         <!-- home --> 
         <div class="home">
@@ -78,10 +80,10 @@
                 About
             </h1>
             <div class="about-content">
-                <div class="my-image">
+                <div data-aos="zoom-out-up" class="my-image">
                     <img src="assets/me.jpeg" alt="me">
                 </div>
-                <div class="content-box">
+                <div data-aos="zoom-out-up" class="content-box">
                     <h3>
                         Web Developer
                     </h3>
@@ -136,8 +138,8 @@
     <script src="script.js"></script>
     <script>
             AOS.init({
-      duration: 1200,
-    })
+            duration: 1200,
+            })
           </script>
 </body>
 </html>
