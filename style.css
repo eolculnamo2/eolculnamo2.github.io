@@ -8,6 +8,7 @@ header {
     left: 0;
     top: 0;
     width: 100vw;
+    padding: 0;
     min-height: 10vh;
     background-color: #303C6C;
     color: #B4DFE5;
@@ -241,10 +242,14 @@ header li:hover {
     border-radius: 5px;
 }
 .my-image{
-    padding: 20px;
+    padding: 20px 0;
     align-self: center;
 }
-
+@media screen and (min-width: 600px){
+    .my-image{
+        padding: 20px;
+    }
+}
 /* Contact */
 .contact{
     background-color: #333;

@@ -41,7 +41,17 @@ new Vue ({
     },
     created: function(){ 
         window.addEventListener("click",(e)=>{   
-            if(e.target.className != "mobile-menu"){        
+            if(e.target.className != "mobile-menu" && window.innerWidth <= 650){       
+                menu.style.position="static"
+                menu.style.display="none"
+            }
+        })
+        window.addEventListener("resize",()=>{
+            if(window.innerWidth > 650){
+                menu.style.position = "absolute";
+                menu.style.display = "flex"; 
+            }
+            else{
                 menu.style.position="static"
                 menu.style.display="none"
             }
