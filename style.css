@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #FBE8A6;
+    overflow-x: hidden;
 }
 /* Header */
 header {
@@ -218,6 +219,12 @@ header li:hover {
     flex-wrap: wrap;
 }
 @media (min-width: 600px){
+    .about-content {
+        width: 90vw;
+        margin: auto;
+    }
+}
+@media (min-width: 1375px){
     .about-content {
         width: 70vw;
         margin: auto;
