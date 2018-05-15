@@ -17,10 +17,10 @@ new Vue ({
                 seeAt: "Codepen"
             },
             {
-                title: "Git Profile Viewer",
-                image: "assets/git-profile.png",
-                github: "https://github.com/eolculnamo2/github-profile-viewer",
-                view: "https://future-store.glitch.me/",
+                title: "JTrac Clone",
+                image: "assets/JTrac Clone.png",
+                github: "https://github.com/eolculnamo2/ReactTrac",
+                view: "https://learned-parallelogram.glitch.me/",
                 seeAt: "GitHub"
             },
             {
@@ -39,9 +39,9 @@ new Vue ({
             }
         ]
     },
-    created: function(){ 
-        window.addEventListener("click",(e)=>{   
-            if(e.target.className != "mobile-menu" && window.innerWidth <= 650){       
+    created: function(){
+        window.addEventListener("click",(e)=>{
+            if(e.target.className != "mobile-menu" && window.innerWidth <= 650){
                 menu.style.position="static"
                 menu.style.display="none"
             }
@@ -49,7 +49,7 @@ new Vue ({
         window.addEventListener("resize",()=>{
             if(window.innerWidth > 650){
                 menu.style.position = "absolute";
-                menu.style.display = "flex"; 
+                menu.style.display = "flex";
             }
             else{
                 menu.style.position="static"
@@ -74,7 +74,7 @@ new Vue ({
                 menu.style.position="static"
                 menu.style.display="none"
             })
-            
-        }        
+
+        }
     }
 })
