@@ -259,7 +259,9 @@ header li:hover {
 .my-image{
     padding: 20px 0;
     align-self: center;
-    max-width: 90%;
+}
+.my-image img {
+    max-width: 100%;
 }
 @media screen and (min-width: 600px){
     .my-image{
