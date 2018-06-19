@@ -242,6 +242,14 @@ header li:hover {
     line-height: 1.25;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+.about-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-content ul li {
+    width: 45%;
+}
 .content-box {
     background-color: #FBE8A6;
     margin: 20px;
