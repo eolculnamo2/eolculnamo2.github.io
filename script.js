@@ -10,6 +10,20 @@ new Vue ({
                 seeAt: "GitHub"
             },
             {
+                title: "Sword-Point",
+                image: "assets/sword-point.png",
+                github: "https://www.github.com/eolculnamo2/hema-site",
+                view: "https://www.sword-point.com",
+                seeAt: "GitHub"
+            },
+            {
+                title: "Issue Tracker",
+                image: "assets/issue-tracker.png",
+                github: "https://github.com/eolculnamo2/fccIssueTracker",
+                view: "https://road-verse.glitch.me/",
+                seeAt: "GitHub"
+            },
+            {
                 title: "Game of Life",
                 image: "assets/gol.png",
                 github: "https://codepen.io/eolculnamo2/pen/XeKXpY",
